@@ -1,0 +1,376 @@
+/* Reset and base styles  */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato Regular'), local('Lato-Regular'),
+        url('../fonts/lato-v15-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/lato-v15-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+  /* lato-700 - latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Lato Bold'), local('Lato-Bold'),
+        url('../fonts/lato-v15-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/lato-v15-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+  /* lato-900 - latin */
+@font-face {
+	font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+	src: local('Lato Black'), local('Lato-Black'),
+        url('../fonts/lato-v15-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/lato-v15-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+$fuschia: #ff0081;
+$button-bg: $fuschia;
+$button-text-color: #fff;
+$baby-blue: #f8faff;
+
+* {
+    margin: 0;
+	padding: 0;
+	font-family:'Poppins';
+}
+
+body {
+	font-family: 'Poppins';
+	font-weight: 400;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+.contain {
+	margin:0 auto;
+	width: 1400px;	
+
+}
+
+.wrapper{
+	background-image: url(https://p0.zoon.ru/preview/dUlS95YelXaOdFT24XgQdg/2400x1500x85/1/1/9/original_5554a78740c08863448c578d_62690fce597e48.41378877.jpg);
+	background-size: 100%;
+	max-height: 1000px;
+}
+
+header {
+	padding: 50px 0;
+
+}
+
+header .logo {
+	text-transform: uppercase;
+	font-size: 29px;
+	font-weight: 800;
+}
+
+header nav{
+	float: right;
+	width: 50%;
+}
+
+header nav ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+}
+
+header nav ul li{
+	display: inline-block;
+}
+
+header nav ul li a{
+	color: black;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 20.83px;
+	text-align: left;
+	
+}
+
+header nav ul li:not(.active) a:hover{
+	border-bottom: 2px solid;
+}
+
+.hero_info{
+	width: 440px;
+	height: 560px;
+    font-size: 25px;
+	font-family: 'Arial';
+	margin-top: 100px;
+	margin-bottom: 40px;
+	margin-left: 400px;
+
+}
+
+.imdg {
+	width: 411px;
+	height: 560px;
+	border-radius: 30px;
+	margin-top: 30px;
+	margin-left: 150px;
+}
+
+.hero {
+	display: flex;
+}
+
+.btnn {
+	width: 150px;
+	height: 50px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial;
+	font-size: 20px;
+	background-color: rgb(179, 141, 128);
+	border: none;
+	border-radius: 30px;
+	margin-left: 130px;
+}
+
+.btnn:hover{
+	background-color:rgb(139, 97, 83); ;
+}
+
+.h1 {
+	font-family: 'Arial';
+	font-size: 40px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.t1 {
+	font-family: 'Arial';
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.next-slaid {
+	height: 700px;
+    background-color: rgb(255, 255, 255);
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.arrow {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	right:48.5%;
+	transition: .3s all ease;
+	flex:1;
+}
+
+.arrow:hover {
+	flex:2;
+	margin-top: 20px;
+}
+
+
+
+.grids{
+	align-items: center;
+    color: black;
+	display: grid;
+	grid-gap: 210px ;
+    grid-template-columns: 300px 300px 300px;
+	position: absolute;
+	right: 200px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.phot {
+	height: 100px;
+	margin-bottom: 29px;
+	display: flex;
+}
+
+.conn{
+	border: 2px solid;
+}
+
+.mask-p {
+	font-size: 25px;
+	background-color: rgb(255, 236, 236);
+	border-bottom: 1px solid black;
+
+}
+.content-grid{
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+}
+
+.btn2-cont {
+	color: black;
+	display: block;
+}
+
+.btn2 {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  display: inline-block;
+  font-size: 1em;
+  padding: 1em 2em;
+  margin-top: 400px;
+  margin-bottom: 60px;
+  margin-left: 770px;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color:rgb(166, 163, 243);
+  color: $button-text-color;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+  box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
+
+
+  &:focus {
+    outline: 0;
+  }
+  
+  &:before, &:after{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 140%;
+    height: 100%;
+    left: -20%;
+    z-index: -1000;
+    transition: all ease-in-out 0.5s;
+    background-repeat: no-repeat;
+  }
+  
+  &:before{
+    display: none;
+    top: -75%;
+    background-image:  
+      radial-gradient(circle, $button-bg 20%, transparent 20%),
+    radial-gradient(circle,  transparent 20%, $button-bg 20%, transparent 30%),
+    radial-gradient(circle, $button-bg 20%, transparent 20%), 
+    radial-gradient(circle, $button-bg 20%, transparent 20%),
+    radial-gradient(circle,  transparent 10%, $button-bg 15%, transparent 20%),
+    radial-gradient(circle, $button-bg 20%, transparent 20%),
+    radial-gradient(circle, $button-bg 20%, transparent 20%),
+    radial-gradient(circle, $button-bg 20%, transparent 20%),
+    radial-gradient(circle, $button-bg 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+  //background-position: 0% 80%, -5% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 85% 30%;
+  }
+  
+
+ 
+  &:active{
+    transform: scale(0.9);
+    background-color: darken($button-bg, 5%);
+    box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
+  }
+  
+
+}
+
+
+.three-slide{
+	display: block;
+	height: 800px;
+	background-image: url(https://static.tildacdn.com/tild3232-3335-4365-a637-366561373038/woman-with-face-beau.jpg);
+}
+
